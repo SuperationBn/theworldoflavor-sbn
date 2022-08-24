@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;800&display=swap');
+
+:root {
+  /* blobal color */
+  --greenColor: rgb(52, 192, 75);
+  /* blobal color */
+  /* THEME */
+  /* -------------------------- */
+  /* ligth theme */
+  --bg-colorLigth: rgb(248, 246, 246);
+  --h1-colorLigth: rgba(32, 31, 31, 0.922);
+  --h2-colorLigth: rgba(32, 31, 31, 0.85);
+  --h3-colorLigth: rgba(32, 31, 31, 0.761);
+  --p-colorLigth: rgba(28, 26, 26, 0.690);
+  --spanColorLigth: rgba(28, 26, 26, 0.550);
+  /* ligth theme */
+  /* ------------------------------------- */
+  /* dark theme */
+  --bg-colorDark: rgb(32, 30, 30);
+  --h1-colorDark: rgba(255, 255, 255, 0.922);
+  --h2-colorDark: rgba(255, 255, 255, 0.85);
+  --h3-colorDark: rgba(255, 255, 255, 0.761);
+  --p-colorDark: rgba(255, 255, 255, 0.690);
+  --spanColorDark: rgba(255, 255, 255, 0.55);
+  /* dark theme */
+  /* -------------------------- */
+  /* THEME */
+}
+
+.themeLigth {
+  --bg-Color: var(--bg-colorLigth);
+  --h1-Color: var(--h1-colorLigth);
+  --h2-Color: var(--h2-colorLigth);
+  --h3-Color: var(--h3-colorLigth);
+  --p-color: var(--p-colorLigth);
+  --spanColor: var(--spanColorLigth);
+}
+
+.themeDark {
+  --bg-Color: var(--bg-colorDark);
+  --h1-Color: var(--h1-colorDark);
+  --h2-Color: var(--h2-colorDark);
+  --h3-Color: var(--h3-colorDark);
+  --p-color: var(--p-colorDark);
+  --spanColor: var(--spanColorDark);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  transition: all 0.2s ease-in;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+  background: var(--bg-Color);
+}
+
+h1 {
+  color: var(--h1-Color);
+}
+
+h2 {
+  color: var(--h2-Color);
+}
+
+h3 {
+  color: var(--h3-Color);
+}
+
+p {
+  color: var(--p-color);
+}
+
+span {
+  color: var(--spanColor);
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
+.spanGlobal {
+  color: var(--greenColor);
+}
+
+button {
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 1rem 3rem;
+  color: aliceblue;
+  border-radius: 5px;
+  background-color: rgb(27, 137, 27);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.202);
+}
+
+button:hover {
+  background-color: rgb(35, 167, 21);
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.288);
+
+}
+
+img {
+  max-width: 100%;
+}
